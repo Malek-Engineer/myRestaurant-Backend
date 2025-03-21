@@ -4,7 +4,7 @@ from datetime import datetime
 
 
 class Restaurant(models.Model): 
-    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='restaurant_profile')
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='restaurant_profile')
     address = models.CharField(max_length=100, unique=True)
     opening_hours = models.CharField(max_length=30, blank=True, null=True)
     description = models.CharField(max_length=100, blank=True, null=True)
