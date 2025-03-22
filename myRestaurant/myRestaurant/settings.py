@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'apps.restaurants',
     'apps.orders',
     'apps.drivers',
+    'rest_framework',
 ]
 
 AUTH_USER_MODEL = 'accounts.User'
